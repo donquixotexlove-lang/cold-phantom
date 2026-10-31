@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="id"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>BRKH Konveksi - Solusi Produksi Apparel &amp; Seragam Custom</title>
+<!-- Google Fonts: Plus Jakarta Sans -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols Outlined -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS CDN with forms and container queries -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+          },
+          colors: {
+            brand: {
+              black: '#111111',
+              dark: '#1a1a1a',
+              border: '#D9D9D9',
+              gray: '#666666',
+              lightGray: '#A3A3A3',
+              subtle: '#E5E5E5',
+              surface: '#F5F5F5',
+            }
+          }
+        }
+      }
+    }
+  </script>
+<style data-purpose="custom-layout">
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      background-color: #FFFFFF;
+      color: #111111;
+      -webkit-font-smoothing: antialiased;
+    }
+  </style>
+</head>
+<body class="bg-white text-brand-black antialiased selection:bg-brand-black selection:text-white">
+<!-- BEGIN: TopFloatingNavigationHeader -->
+<header class="fixed top-0 left-0 right-0 z-50 pt-4 px-4 sm:px-6 transition-all duration-300" data-purpose="main-navigation">
+<div class="max-w-7xl mx-auto flex items-center justify-between bg-white/95 backdrop-blur-md border border-brand-border rounded-full px-5 py-2.5 shadow-sm">
+<!-- Brand Logo -->
+<a aria-label="BRKH Konveksi Beranda" class="flex items-center space-x-3" href="#beranda">
+<div class="h-9 w-24 bg-white flex items-center justify-center">
+<img alt="Logo BRKH Konveksi" class="max-h-full max-w-full object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCbRD6qyDU2Kx0IVUHqyLxnAbXP_fWUMLEA4HitZwFyofBadvig1wxuqJ32zfKWAb_0PUk2kynh3H9pzWMXHP3SXRV-E1Ei94VXCw4jGgQpNBYnj4vM91iU40-eamnnuoeQB23SHEalzKi_vPD6ToDTtneReM33OZ17pJqWwk3mzdToh_v0ErCqdal-4J_tU9-FazDv-5JVsmhlYaQXeNyVxSteRQ4r2rNMr4C52hEAR37SrKziCGsS"/>
+</div>
+</a>
+<!-- Center Navigation Pill -->
+<nav aria-label="Menu Utama" class="hidden md:flex items-center space-x-1 text-sm font-medium bg-white px-3 py-1 rounded-full border border-brand-border">
+<a class="px-4 py-1.5 rounded-full text-brand-black hover:bg-brand-surface text-xs font-semibold tracking-wide transition-colors" href="#beranda">Beranda</a>
+<a class="px-4 py-1.5 rounded-full text-brand-gray hover:text-brand-black hover:bg-brand-surface text-xs font-semibold tracking-wide transition-all" href="#tentang">Tentang Kami</a>
+<a class="px-4 py-1.5 rounded-full text-brand-gray hover:text-brand-black hover:bg-brand-surface text-xs font-semibold tracking-wide transition-all" href="#katalog">Katalog</a>
+<a class="px-4 py-1.5 rounded-full text-brand-gray hover:text-brand-black hover:bg-brand-surface text-xs font-semibold tracking-wide transition-all" href="#cara-pesan">Cara Pesan</a>
+<a class="px-4 py-1.5 rounded-full text-brand-gray hover:text-brand-black hover:bg-brand-surface text-xs font-semibold tracking-wide transition-all" href="#kontak">Kontak</a>
+</nav>
+<!-- Right Action Items -->
+<div class="hidden sm:flex items-center space-x-5">
+<a class="inline-flex items-center text-xs font-semibold tracking-wide text-brand-black hover:text-brand-gray transition-colors" href="#lacak">
+<span class="w-1.5 h-1.5 rounded-full bg-brand-black mr-2"></span>
+        Lacak Pesanan
+      </a>
+<a class="px-5 py-2 rounded-full bg-brand-black hover:bg-neutral-800 text-white text-xs font-semibold tracking-wide transition-all shadow-sm" href="#pengajuan">
+        Konsultasi
+      </a>
+</div>
+<!-- Mobile Hamburger Toggle Button -->
+<div class="flex items-center md:hidden gap-2">
+<a class="px-3.5 py-1.5 rounded-full bg-brand-black text-white text-xs font-semibold" href="#pengajuan">
+        Konsultasi
+      </a>
+<button aria-label="Buka Menu" class="p-2 text-brand-black rounded-lg focus:outline-none" id="mobile-menu-button" type="button">
+<span class="material-symbols-outlined text-[24px]">menu</span>
+</button>
+</div>
+</div>
+<!-- Mobile Drawer / Dropdown -->
+<div class="hidden md:hidden max-w-7xl mx-auto mt-2 bg-white border border-brand-border rounded-2xl p-4 shadow-lg" id="mobile-menu">
+<nav class="flex flex-col space-y-2 text-xs font-semibold">
+<a class="px-3 py-2 rounded-lg hover:bg-brand-surface text-brand-black" href="#beranda">Beranda</a>
+<a class="px-3 py-2 rounded-lg hover:bg-brand-surface text-brand-gray" href="#tentang">Tentang Kami</a>
+<a class="px-3 py-2 rounded-lg hover:bg-brand-surface text-brand-gray" href="#katalog">Katalog</a>
+<a class="px-3 py-2 rounded-lg hover:bg-brand-surface text-brand-gray" href="#kategori">Kategori</a>
+<a class="px-3 py-2 rounded-lg hover:bg-brand-surface text-brand-gray" href="#cara-pesan">Cara Pesan</a>
+<a class="px-3 py-2 rounded-lg hover:bg-brand-surface text-brand-gray" href="#pengajuan">Ajukan Pesanan</a>
+<a class="px-3 py-2 rounded-lg hover:bg-brand-surface text-brand-gray" href="#kontak">Kontak</a>
+<a class="px-3 py-2 rounded-lg hover:bg-brand-surface text-brand-black flex items-center" href="#lacak">
+<span class="w-1.5 h-1.5 rounded-full bg-brand-black mr-2"></span>
+        Lacak Pesanan
+      </a>
+</nav>
+</div>
+</header>
+<!-- END: TopFloatingNavigationHeader -->
+<!-- BEGIN: MainContent -->
+<main class="pt-24 sm:pt-28">
+<!-- 2. HERO SECTION (Editorial 2 Kolom) -->
+<section class="py-12 sm:py-20 border-b border-brand-border bg-white" data-purpose="hero-section" id="beranda">
+<div class="max-w-7xl mx-auto px-4 sm:px-6">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-14 items-center">
+<!-- Kolom Kiri: Teks & Aksi -->
+<div class="flex flex-col justify-center">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-surface border border-brand-border text-[11px] font-bold tracking-[0.15em] text-brand-black uppercase mb-6 self-start">
+<span class="w-1.5 h-1.5 rounded-full bg-brand-black"></span>
+            KONVEKSI &amp; SABLON
+          </div>
+<h1 class="text-3xl sm:text-4xl lg:text-[44px] font-extrabold tracking-tight text-brand-black leading-tight sm:leading-[1.18] mb-5 uppercase">
+            PRODUKSI APPAREL UNTUK SETIAP KEBUTUHAN.
+          </h1>
+<p class="text-sm sm:text-base text-brand-gray font-normal leading-relaxed mb-8 max-w-xl">
+            Melayani kebutuhan konveksi dan sablon untuk seragam, komunitas, perusahaan, hingga merchandise custom.
+          </p>
+<div class="flex flex-wrap items-center gap-3.5">
+<a class="inline-flex items-center justify-center px-7 py-3 rounded-full bg-brand-black text-white text-xs sm:text-sm font-semibold tracking-wide hover:bg-neutral-800 transition-colors" href="#katalog">
+              Lihat Katalog
+            </a>
+<a class="inline-flex items-center justify-center px-7 py-3 rounded-full border border-brand-border bg-white text-brand-black text-xs sm:text-sm font-semibold tracking-wide hover:bg-brand-surface transition-colors" href="#pengajuan">
+              Ajukan Pesanan
+            </a>
+</div>
+</div>
+<!-- Kolom Kanan: Foto Studio -->
+<div class="w-full">
+<div class="relative w-full rounded-2xl lg:rounded-3xl overflow-hidden border border-brand-border bg-brand-surface shadow-sm aspect-[4/3]">
+<img alt="Kegiatan Produksi BRKH Konveksi" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1Uv4zRSFDCQWDGDhim3zjPtG0jQ-hMuUdm_KBKxpuVZxx4Sjztunxlbi82BV2S6ltXFGyvG78EH4ZoZMAe3L0MqUmeJ_yfgI6x6XpGo3cpsROkImYEJUe7ZL1lbct0EIWavCsng28xXinp3Fdvbb8MCcpAiyPW62JW83UISwBGGswfzfA5eu-ewNkyosVT5AW4djjANcGf7Vw2owyjVmn4wovXHKSvbe9blv5pE4H_B"/>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 3. PROFIL SINGKAT BRKH (Section Pengenalan Perusahaan - Editorial Layout) -->
+<section class="py-16 sm:py-24 border-b border-brand-border bg-brand-surface" data-purpose="about-section" id="tentang">
+<div class="max-w-7xl mx-auto px-4 sm:px-6">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+<div class="lg:col-span-5 space-y-4">
+<span class="text-[11px] font-bold tracking-[0.2em] text-brand-gray uppercase block">TENTANG BRKH</span>
+<h2 class="text-2xl sm:text-3xl font-extrabold tracking-tight text-brand-black uppercase leading-snug">
+            MITRA PRODUKSI KONVEKSI DAN SABLON UNTUK BERBAGAI KEBUTUHAN.
+          </h2>
+</div>
+<div class="lg:col-span-7 flex flex-col justify-between space-y-6">
+<p class="text-sm sm:text-base text-brand-gray leading-relaxed">
+            BRKH Konveksi melayani kebutuhan produk konveksi dan sablon, mulai dari seragam, apparel, hingga merchandise custom. Dengan standar pengerjaan terstruktur, kami mendampingi proses mulai dari pemilihan bahan baku, pembuatan pola, aplikasi sablon &amp; bordir, hingga proses finishing yang terjaga rapi.
+          </p>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+<div class="p-4 rounded-xl bg-white border border-brand-border">
+<span class="text-xs font-bold text-brand-black block mb-1">Spesifikasi Fleksibel</span>
+<p class="text-xs text-brand-gray">Pilihan material kain, teknik sablon plastisol/DTF, dan bordir komputer sesuai kebutuhan.</p>
+</div>
+<div class="p-4 rounded-xl bg-white border border-brand-border">
+<span class="text-xs font-bold text-brand-black block mb-1">Proses Terpantau</span>
+<p class="text-xs text-brand-gray">Sistem pendataan order terpusat yang memudahkan pemantauan progres pengerjaan.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 4. KATEGORI PRODUK (Grid Rapih) -->
+<section class="py-20 bg-white border-b border-brand-border" data-purpose="product-categories" id="kategori">
+<div class="max-w-7xl mx-auto px-4 sm:px-6">
+<!-- Header Kategori -->
+<div class="flex flex-col sm:flex-row sm:items-end justify-between mb-10 gap-4">
+<div>
+<span class="text-[11px] font-bold uppercase tracking-[0.2em] text-brand-gray block mb-2">KATALOG PRODUKSI</span>
+<h2 class="text-2xl sm:text-3xl font-extrabold tracking-tight text-brand-black">KATEGORI PRODUK</h2>
+<p class="text-brand-gray text-xs sm:text-sm mt-1">Temukan berbagai pilihan produk konveksi dan merchandise sesuai kebutuhan Anda.</p>
+</div>
+<a class="inline-flex items-center text-xs font-bold tracking-wider uppercase text-brand-black hover:text-brand-gray transition-colors" href="#katalog">
+          Lihat Semua Kategori →
+        </a>
+</div>
+<!-- 9 Kategori Produk Grid Rapih -->
+<div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-5 sm:gap-6">
+<!-- 01 PDH & Seragam -->
+<div class="bg-white rounded-xl border border-brand-border overflow-hidden hover:border-brand-black transition-colors group">
+<div class="aspect-[4/3] overflow-hidden bg-brand-surface">
+<img alt="PDH &amp; Seragam" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" src="https://lh3.googleusercontent.com/aida/AEtjO1V8NzvELhJFYN9IkkvNw-3EIHPWkNF9QHYEt7Fkrgddl7j6WIyQqR2f_Af-4ueQEGWPFjXooeg9f90T4ndrHo7F83T5e3cKLFamiBDgYlOpdIXQ2HeHaqTzTaH6Zj3XxQ7YDK6WJx_q0Ku5QwUzTbGkDG023F7Kv7Y9zz71Q_Ps334Ls69Un3whgKqiQQOF6jXn4Y2FqOVDWtzx2-Qp3CeC4NguH9hessRtJHb7Wxi7"/>
+</div>
+<div class="p-4">
+<span class="text-[11px] font-mono text-brand-lightGray font-semibold">01</span>
+<h3 class="font-bold text-sm sm:text-base text-brand-black mt-0.5">PDH &amp; Seragam</h3>
+<p class="text-xs text-brand-gray mt-1">Kemeja, Drill, &amp; Wearpack</p>
+</div>
+</div>
+<!-- 02 Kaos -->
+<div class="bg-white rounded-xl border border-brand-border overflow-hidden hover:border-brand-black transition-colors group">
+<div class="aspect-[4/3] overflow-hidden bg-brand-surface">
+<img alt="Kaos" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" src="https://lh3.googleusercontent.com/aida/AEtjO1XugpLit0-rdNH7HVmTQDJg6Lb_Kj0hi_KieaEAsGRHCnPvyiOEd6AHmNUTFph6o7KnWcRfJ32-nYlJ5qfrSBVccL7yl95hygz5EWHRtqcOVcrtzm2RbdpLBlHlL1q7_IJYA99MMuR_iXtTp_JP3iEEgICHKFnEyfD3M9mbQc80eET3Lv7a-a-glAhemZ9xt1jcVELx-7qADNzQ7xFBfp8Yz4ByzDPy7TYV-G9R8Bc3"/>
+</div>
+<div class="p-4">
+<span class="text-[11px] font-mono text-brand-lightGray font-semibold">02</span>
+<h3 class="font-bold text-sm sm:text-base text-brand-black mt-0.5">Kaos</h3>
+<p class="text-xs text-brand-gray mt-1">Cotton Combed &amp; Sablon</p>
+</div>
+</div>
+<!-- 03 Polo Shirt -->
+<div class="bg-white rounded-xl border border-brand-border overflow-hidden hover:border-brand-black transition-colors group">
+<div class="aspect-[4/3] overflow-hidden bg-brand-surface">
+<img alt="Polo Shirt" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" src="https://lh3.googleusercontent.com/aida/AEtjO1Vfw-kxcF7h7CMwAsJ3Q8LIkKTXO41UejMe_Z4vUbbxeXCFrgH9xLP8MKEIeC33OPrnjUXoEEfApDkCN66GdxySIYQBaJiaEJQL-zyXkC5e9k_vIdPFOt2MsSBjb_8f0bymQn7Zh58Rg_svrnXNVSyioaSgRs_j7i-IN5Nrnxyn0IsYd624B4CGoqVB2rYZoR4YBIkq5JiTDAqJy1ssZ_EgzmEifjPbzus3l6jwA34s"/>
+</div>
+<div class="p-4">
+<span class="text-[11px] font-mono text-brand-lightGray font-semibold">03</span>
+<h3 class="font-bold text-sm sm:text-base text-brand-black mt-0.5">Polo Shirt</h3>
+<p class="text-xs text-brand-gray mt-1">Pique Cotton &amp; Bordir</p>
+</div>
+</div>
+<!-- 04 Jaket -->
+<div class="bg-white rounded-xl border border-brand-border overflow-hidden hover:border-brand-black transition-colors group">
+<div class="aspect-[4/3] overflow-hidden bg-brand-surface">
+<img alt="Jaket" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" src="https://lh3.googleusercontent.com/aida/AEtjO1WxW4H7e4G4wOd6Q_ivynwYm6_FLtqh8fleVqVFcbV_XDVbRMNXFTxRJ1B0h-herHSUbioYfaPlv2HnN13CbtSlgCu37FBWinoorTaxEWPzU4yINPddzboK_k_y4gKMnSF_byIeqHMwbC-XroBrXWgB5ZZK2evbV5YisZ7VpFVP1OVv1-TRqh-oI8VM4dLY8hq8_FFAz42PbwgN4NAqmnivoNBpHZe-yWiygKAo11g5"/>
+</div>
+<div class="p-4">
+<span class="text-[11px] font-mono text-brand-lightGray font-semibold">04</span>
+<h3 class="font-bold text-sm sm:text-base text-brand-black mt-0.5">Jaket</h3>
+<p class="text-xs text-brand-gray mt-1">Bomber, Hoodie, &amp; Parka</p>
+</div>
+</div>
+<!-- 05 Selempang -->
+<div class="bg-white rounded-xl border border-brand-border overflow-hidden hover:border-brand-black transition-colors group">
+<div class="aspect-[4/3] overflow-hidden bg-brand-surface">
+<img alt="Selempang" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" src="https://lh3.googleusercontent.com/aida/AEtjO1XPXw7LkdiI7_CLS9EVIoIAVt_6wsyWXYoj5efaoJd-t72Zlrjx5uPnT9u8Ewdu4wrjOBwdGvLwsb5UCqXPtGvj3j3VjJIfcuiDhBgYcTzKVVTP_VKM1i7MEeuPBGaCJZdvhdW7QZwCXN9yLz3LFmZkUTlmTTR30Alo1HPrZqkPcI9fKHLOqCSKRNgG6h0iF8vRVgScg4fbghkca8fwLfyT6W0PPpH9puZWun4Y4iPF"/>
+</div>
+<div class="p-4">
+<span class="text-[11px] font-mono text-brand-lightGray font-semibold">05</span>
+<h3 class="font-bold text-sm sm:text-base text-brand-black mt-0.5">Selempang</h3>
+<p class="text-xs text-brand-gray mt-1">Beludru &amp; Bordir Komputer</p>
+</div>
+</div>
+<!-- 06 Lanyard & ID Card -->
+<div class="bg-white rounded-xl border border-brand-border overflow-hidden hover:border-brand-black transition-colors group">
+<div class="aspect-[4/3] overflow-hidden bg-brand-surface">
+<img alt="Lanyard &amp; ID Card" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" src="https://lh3.googleusercontent.com/aida/AEtjO1Ur67bLXtwZZwdQ9Job7zhdZaMx_bR5e85xHe4DGfjZYCp7RSVorcwrPWqZ95KoJ80gNEWUu-7S9TPHILlqtrPG7L5tUyipjAoXAF-7s34XAsoF-LbzlpqWeiI2qezhc3IOLq8lwyWTHwvhPCkfNynIUj6wqSbUV8MKR_7pDnWbOg2-IejY7_uYUhVG4vwnevi7XK9gmDLaPIgz9RSVQPFgMl_S-cGucAJGYp6Zqy2w"/>
+</div>
+<div class="p-4">
+<span class="text-[11px] font-mono text-brand-lightGray font-semibold">06</span>
+<h3 class="font-bold text-sm sm:text-base text-brand-black mt-0.5">Lanyard &amp; ID Card</h3>
+<p class="text-xs text-brand-gray mt-1">Printing Sublim &amp; Holder</p>
+</div>
+</div>
+<!-- 07 Pin & Gordon -->
+<div class="bg-white rounded-xl border border-brand-border overflow-hidden hover:border-brand-black transition-colors group">
+<div class="aspect-[4/3] overflow-hidden bg-brand-surface">
+<img alt="Pin &amp; Gordon" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" src="https://lh3.googleusercontent.com/aida/AEtjO1V6NcB2RE6a8GlOt1rhtFxMhb0xxpX0tCRZwSNN_FAWI5U8RG5LgfqkZfa6F-VayXAnYNQ20JPPSjeMPZYZ5MC3mQVLPva6asYbXOD4l26Ugx3iVG46q5WI6xplv6gM03OHcXQvgznPLoOq4fdGys_Eo_1djPDLNF2JFCu2LEF6aXiXFUyYtG5uYCFWMthnebBis78hyxErIwJPs5MfaDjzHKva5KYbuJ_Tw8HiMlIN"/>
+</div>
+<div class="p-4">
+<span class="text-[11px] font-mono text-brand-lightGray font-semibold">07</span>
+<h3 class="font-bold text-sm sm:text-base text-brand-black mt-0.5">Pin &amp; Gordon</h3>
+<p class="text-xs text-brand-gray mt-1">Enamel Logam &amp; Medali</p>
+</div>
+</div>
+<!-- 08 Bendera -->
+<div class="bg-white rounded-xl border border-brand-border overflow-hidden hover:border-brand-black transition-colors group">
+<div class="aspect-[4/3] overflow-hidden bg-brand-surface">
+<img alt="Bendera" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" src="https://lh3.googleusercontent.com/aida/AEtjO1XIgam7Jd6T6NXn1OwRwfGXvG0zOmQ8I_yT9Hf_sg7fTXfagSy6G1LYWnqQfAwIMZNipic9NHBC_XBanSghVEMogwur5HeFUWteNEXVXFWYR4qOmbo5JqvqmFkqAYbRl-ZtKsY2_F2mRBpQZBaHWVfinBaTpaAelHVzLrifsx_dqD1NoxJ5nVbAZ_7_REbndRAvti8OHnwXp0bFRiVPmaGcXdF7H8-gq-ETmzb9tXzv"/>
+</div>
+<div class="p-4">
+<span class="text-[11px] font-mono text-brand-lightGray font-semibold">08</span>
+<h3 class="font-bold text-sm sm:text-base text-brand-black mt-0.5">Bendera</h3>
+<p class="text-xs text-brand-gray mt-1">Satin, TC, &amp; Pataka</p>
+</div>
+</div>
+<!-- 09 Tote Bag & Merchandise -->
+<div class="bg-white rounded-xl border border-brand-border overflow-hidden hover:border-brand-black transition-colors group">
+<div class="aspect-[4/3] overflow-hidden bg-brand-surface">
+<img alt="Tote Bag &amp; Merchandise" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" src="https://lh3.googleusercontent.com/aida/AEtjO1VbX4ESSqHGD1NQBb7CTsAnavVOIvPC2JwFQ9eY3WFjlv1LRX_N1iVBc4_3y_HljUC5Os1ZIymZtJrMzy6iw2I-h9wn-zxoX-BwuCHSbmAC6CzK0uVTCgi38sstKg0LUTKrIniFbKGzyCSoijqyXIa59F5pwRhwojicxG9QhjZ7M95HNhESZxXFCZk1aBxp26v0xaP53HHitzrAi5vzn8gZQA6NRv3_HiMwQeKYNRs"/>
+</div>
+<div class="p-4">
+<span class="text-[11px] font-mono text-brand-lightGray font-semibold">09</span>
+<h3 class="font-bold text-sm sm:text-base text-brand-black mt-0.5">Tote Bag &amp; Merchandise</h3>
+<p class="text-xs text-brand-gray mt-1">Kanvas Blacu, Topi, &amp; Souvenir</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 5. KATALOG PRODUK (Featured Products dengan Pencarian) -->
+<section class="py-20 bg-brand-surface border-b border-brand-border" data-purpose="featured-products" id="katalog">
+<div class="max-w-7xl mx-auto px-4 sm:px-6">
+<!-- Section Header & Filter / Search Bar -->
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-8 gap-4">
+<div>
+<span class="text-[11px] font-bold uppercase tracking-[0.2em] text-brand-gray block mb-2">PRODUK PILIHAN</span>
+<h2 class="text-2xl sm:text-3xl font-extrabold tracking-tight text-brand-black">PRODUK BRKH</h2>
+<p class="text-brand-gray text-xs sm:text-sm mt-1">Jelajahi produk dan spesifikasi yang tersedia untuk kebutuhan produksi Anda.</p>
+</div>
+<!-- Simple Search Bar -->
+<div class="w-full md:w-80">
+<div class="relative">
+<input class="w-full bg-white border border-brand-border rounded-full pl-10 pr-4 py-2 text-xs text-brand-black placeholder:text-brand-lightGray focus:ring-1 focus:ring-brand-black focus:border-brand-black outline-none" id="product-search" placeholder="Cari nama produk atau bahan..." type="text"/>
+<span class="material-symbols-outlined absolute left-3 top-2.5 text-[18px] text-brand-gray">search</span>
+</div>
+</div>
+</div>
+<!-- Filter Pills -->
+<div class="flex flex-wrap items-center gap-2 mb-8 text-xs font-semibold">
+<button class="px-4 py-1.5 rounded-full bg-brand-black text-white">Semua Produk</button>
+<button class="px-4 py-1.5 rounded-full bg-white border border-brand-border text-brand-gray hover:text-brand-black">PDH &amp; Seragam</button>
+<button class="px-4 py-1.5 rounded-full bg-white border border-brand-border text-brand-gray hover:text-brand-black">Kaos Sablon</button>
+<button class="px-4 py-1.5 rounded-full bg-white border border-brand-border text-brand-gray hover:text-brand-black">Polo Shirt</button>
+<button class="px-4 py-1.5 rounded-full bg-white border border-brand-border text-brand-gray hover:text-brand-black">Merchandise</button>
+</div>
+<!-- 3-Card Catalog Grid Sesuai Referensi BRKH -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+<!-- Card 1: PDH & Seragam -->
+<div class="bg-white rounded-2xl border border-brand-border p-3.5 flex flex-col hover:border-brand-black/40 transition-colors shadow-sm">
+<div class="relative aspect-[4/3] rounded-xl overflow-hidden bg-brand-surface mb-4">
+<img alt="Kemeja PDH &amp; PDL Kerja Custom" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1V8NzvELhJFYN9IkkvNw-3EIHPWkNF9QHYEt7Fkrgddl7j6WIyQqR2f_Af-4ueQEGWPFjXooeg9f90T4ndrHo7F83T5e3cKLFamiBDgYlOpdIXQ2HeHaqTzTaH6Zj3XxQ7YDK6WJx_q0Ku5QwUzTbGkDG023F7Kv7Y9zz71Q_Ps334Ls69Un3whgKqiQQOF6jXn4Y2FqOVDWtzx2-Qp3CeC4NguH9hessRtJHb7Wxi7"/>
+<span class="absolute top-3 left-3 bg-brand-black/90 backdrop-blur-md text-white text-[11px] font-semibold px-3 py-1 rounded-full">
+              PDH &amp; Seragam
+            </span>
+</div>
+<div class="px-1 flex-1 flex flex-col">
+<h3 class="text-base font-bold text-brand-black mb-1">Kemeja PDH &amp; PDL Kerja Custom</h3>
+<p class="text-xs text-brand-gray mb-4">Seragam resmi organisasi, komunitas, &amp; instansi</p>
+<!-- Price Info Box -->
+<div class="mt-auto bg-brand-surface rounded-xl p-3 border border-brand-border mb-4">
+<div class="flex items-center justify-between text-xs mb-1.5">
+<span class="text-brand-gray">Harga Patokan:</span>
+<span class="font-semibold text-brand-black text-xs">Hubungi Kami</span>
+</div>
+<div class="flex items-center justify-between text-xs">
+<span class="text-brand-gray">Minimal Order:</span>
+<span class="font-semibold text-brand-black text-xs">Sesuai Spesifikasi</span>
+</div>
+</div>
+<!-- Action Buttons -->
+<div class="grid grid-cols-2 gap-2">
+<a class="w-full py-2.5 text-center rounded-xl border border-brand-border bg-white text-xs font-semibold text-brand-black hover:bg-brand-surface transition-colors flex items-center justify-center gap-1.5" href="#pengajuan">
+                Detail Produk
+              </a>
+<a class="w-full py-2.5 text-center rounded-xl bg-brand-black text-xs font-semibold text-white hover:bg-neutral-800 transition-colors flex items-center justify-center gap-1" href="#pengajuan">
+                Pesan Sekarang
+              </a>
+</div>
+</div>
+</div>
+<!-- Card 2: Kaos Sablon -->
+<div class="bg-white rounded-2xl border border-brand-border p-3.5 flex flex-col hover:border-brand-black/40 transition-colors shadow-sm">
+<div class="relative aspect-[4/3] rounded-xl overflow-hidden bg-brand-surface mb-4">
+<img alt="Kaos Sablon Custom Cotton Combed" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1XugpLit0-rdNH7HVmTQDJg6Lb_Kj0hi_KieaEAsGRHCnPvyiOEd6AHmNUTFph6o7KnWcRfJ32-nYlJ5qfrSBVccL7yl95hygz5EWHRtqcOVcrtzm2RbdpLBlHlL1q7_IJYA99MMuR_iXtTp_JP3iEEgICHKFnEyfD3M9mbQc80eET3Lv7a-a-glAhemZ9xt1jcVELx-7qADNzQ7xFBfp8Yz4ByzDPy7TYV-G9R8Bc3"/>
+<span class="absolute top-3 left-3 bg-brand-black/90 backdrop-blur-md text-white text-[11px] font-semibold px-3 py-1 rounded-full">
+              Kaos Sablon
+            </span>
+</div>
+<div class="px-1 flex-1 flex flex-col">
+<h3 class="text-base font-bold text-brand-black mb-1">Kaos Sablon Custom Cotton Combed</h3>
+<p class="text-xs text-brand-gray mb-4">Bahan 100% katun adem dengan sablon awet</p>
+<!-- Price Info Box -->
+<div class="mt-auto bg-brand-surface rounded-xl p-3 border border-brand-border mb-4">
+<div class="flex items-center justify-between text-xs mb-1.5">
+<span class="text-brand-gray">Harga Patokan:</span>
+<span class="font-semibold text-brand-black text-xs">Hubungi Kami</span>
+</div>
+<div class="flex items-center justify-between text-xs">
+<span class="text-brand-gray">Minimal Order:</span>
+<span class="font-semibold text-brand-black text-xs">Sesuai Spesifikasi</span>
+</div>
+</div>
+<!-- Action Buttons -->
+<div class="grid grid-cols-2 gap-2">
+<a class="w-full py-2.5 text-center rounded-xl border border-brand-border bg-white text-xs font-semibold text-brand-black hover:bg-brand-surface transition-colors flex items-center justify-center gap-1.5" href="#pengajuan">
+                Detail Produk
+              </a>
+<a class="w-full py-2.5 text-center rounded-xl bg-brand-black text-xs font-semibold text-white hover:bg-neutral-800 transition-colors flex items-center justify-center gap-1" href="#pengajuan">
+                Pesan Sekarang
+              </a>
+</div>
+</div>
+</div>
+<!-- Card 3: Polo Shirt -->
+<div class="bg-white rounded-2xl border border-brand-border p-3.5 flex flex-col hover:border-brand-black/40 transition-colors shadow-sm">
+<div class="relative aspect-[4/3] rounded-xl overflow-hidden bg-brand-surface mb-4">
+<img alt="Polo Shirt Custom Bordir / Sablon" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1Vfw-kxcF7h7CMwAsJ3Q8LIkKTXO41UejMe_Z4vUbbxeXCFrgH9xLP8MKEIeC33OPrnjUXoEEfApDkCN66GdxySIYQBaJiaEJQL-zyXkC5e9k_vIdPFOt2MsSBjb_8f0bymQn7Zh58Rg_svrnXNVSyioaSgRs_j7i-IN5Nrnxyn0IsYd624B4CGoqVB2rYZoR4YBIkq5JiTDAqJy1ssZ_EgzmEifjPbzus3l6jwA34s"/>
+<span class="absolute top-3 left-3 bg-brand-black/90 backdrop-blur-md text-white text-[11px] font-semibold px-3 py-1 rounded-full">
+              Polo Shirt
+            </span>
+</div>
+<div class="px-1 flex-1 flex flex-col">
+<h3 class="text-base font-bold text-brand-black mb-1">Polo Shirt Custom Bordir / Sablon</h3>
+<p class="text-xs text-brand-gray mb-4">Tampilan rapi kasual untuk staf, seragam kantor, &amp; gathering</p>
+<!-- Price Info Box -->
+<div class="mt-auto bg-brand-surface rounded-xl p-3 border border-brand-border mb-4">
+<div class="flex items-center justify-between text-xs mb-1.5">
+<span class="text-brand-gray">Harga Patokan:</span>
+<span class="font-semibold text-brand-black text-xs">Hubungi Kami</span>
+</div>
+<div class="flex items-center justify-between text-xs">
+<span class="text-brand-gray">Minimal Order:</span>
+<span class="font-semibold text-brand-black text-xs">Sesuai Spesifikasi</span>
+</div>
+</div>
+<!-- Action Buttons -->
+<div class="grid grid-cols-2 gap-2">
+<a class="w-full py-2.5 text-center rounded-xl border border-brand-border bg-white text-xs font-semibold text-brand-black hover:bg-brand-surface transition-colors flex items-center justify-center gap-1.5" href="#pengajuan">
+                Detail Produk
+              </a>
+<a class="w-full py-2.5 text-center rounded-xl bg-brand-black text-xs font-semibold text-white hover:bg-neutral-800 transition-colors flex items-center justify-center gap-1" href="#pengajuan">
+                Pesan Sekarang
+              </a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 6. ALUR PEMESANAN (Order Workflow Sesuai PRD) -->
+<section class="py-20 bg-white border-b border-brand-border" data-purpose="order-workflow" id="cara-pesan">
+<div class="max-w-7xl mx-auto px-4 sm:px-6">
+<div class="max-w-3xl mb-12">
+<span class="text-[11px] font-bold uppercase tracking-[0.2em] text-brand-gray block mb-2">CARA PEMESANAN</span>
+<h2 class="text-2xl sm:text-3xl font-extrabold tracking-tight text-brand-black uppercase">
+          ALUR PEMESANAN YANG TERSTRUKTUR DAN MUDAH.
+        </h2>
+<p class="text-brand-gray text-xs sm:text-sm mt-2">Setiap tahap produksi dirancang transparan agar hasil sesuai dengan ekspektasi dan target waktu Anda.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-4">
+<!-- Step 1 -->
+<div class="bg-brand-surface border border-brand-border rounded-2xl p-5 flex flex-col justify-between">
+<div>
+<span class="text-xs font-mono font-bold text-brand-gray block mb-3">01</span>
+<h3 class="text-sm font-bold text-brand-black mb-2">Konsultasi &amp; Pengajuan Kebutuhan</h3>
+<p class="text-xs text-brand-gray leading-relaxed">Pilih produk, sampaikan jumlah &amp; spesifikasi via form atau kontak resmi BRKH.</p>
+</div>
+</div>
+<!-- Step 2 -->
+<div class="bg-brand-surface border border-brand-border rounded-2xl p-5 flex flex-col justify-between">
+<div>
+<span class="text-xs font-mono font-bold text-brand-gray block mb-3">02</span>
+<h3 class="text-sm font-bold text-brand-black mb-2">Konfirmasi Detail &amp; Desain</h3>
+<p class="text-xs text-brand-gray leading-relaxed">Persetujuan artwork sablon/bordir, pemilihan bahan baku kain, serta penetapan deadline.</p>
+</div>
+</div>
+<!-- Step 3 -->
+<div class="bg-brand-surface border border-brand-border rounded-2xl p-5 flex flex-col justify-between">
+<div>
+<span class="text-xs font-mono font-bold text-brand-gray block mb-3">03</span>
+<h3 class="text-sm font-bold text-brand-black mb-2">Proses Produksi</h3>
+<p class="text-xs text-brand-gray leading-relaxed">Penerbitan nota, proses potong, sablon/bordir, penjahitan, hingga quality control ketat.</p>
+</div>
+</div>
+<!-- Step 4 -->
+<div class="bg-brand-surface border border-brand-border rounded-2xl p-5 flex flex-col justify-between">
+<div>
+<span class="text-xs font-mono font-bold text-brand-gray block mb-3">04</span>
+<h3 class="text-sm font-bold text-brand-black mb-2">Pantau Status Pesanan</h3>
+<p class="text-xs text-brand-gray leading-relaxed">Dapatkan nomor referensi resmi dan pantau progres pengerjaan mandiri melalui website.</p>
+</div>
+</div>
+<!-- Step 5 -->
+<div class="bg-brand-surface border border-brand-border rounded-2xl p-5 flex flex-col justify-between">
+<div>
+<span class="text-xs font-mono font-bold text-brand-gray block mb-3">05</span>
+<h3 class="text-sm font-bold text-brand-black mb-2">Selesai &amp; Pengiriman</h3>
+<p class="text-xs text-brand-gray leading-relaxed">Pengepakan rapi dan pesanan siap diambil di workshop atau dikirimkan ke alamat Anda.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 7. FORM PENGAJUAN PESANAN / ORDER INQUIRY (MVP PRD FR-02) -->
+<section class="py-20 bg-brand-surface border-b border-brand-border" data-purpose="order-inquiry" id="pengajuan">
+<div class="max-w-7xl mx-auto px-4 sm:px-6">
+<div class="max-w-2xl mx-auto">
+<div class="text-center mb-8">
+<span class="text-[11px] font-bold uppercase tracking-[0.2em] text-brand-gray block mb-2">PENGAJUAN PESANAN</span>
+<h2 class="text-2xl sm:text-3xl font-extrabold tracking-tight text-brand-black">Mulai Pengajuan Kebutuhan Produksi Anda.</h2>
+<p class="text-brand-gray text-xs sm:text-sm mt-2">Sampaikan kebutuhan apparel atau merchandise Anda secara terstruktur untuk respon cepat dari tim BRKH.</p>
+</div>
+<form action="#pengajuan" class="bg-white border border-brand-border rounded-2xl p-6 sm:p-8 space-y-5 shadow-sm" method="post" onsubmit="event.preventDefault(); alert('Terima kasih. Pengajuan Anda telah tercatat. Tim BRKH akan segera menghubungi.');">
+<!-- Pilihan Jenis Produk -->
+<div>
+<label class="block text-xs font-bold text-brand-black mb-2">Pilih Jenis Produk</label>
+<div class="grid grid-cols-2 sm:grid-cols-3 gap-2">
+<label class="flex items-center gap-2 p-2.5 rounded-xl border border-brand-border text-xs cursor-pointer hover:bg-brand-surface transition-colors">
+<input checked="" class="text-brand-black focus:ring-0" name="product_type" type="radio" value="PDH &amp; Seragam"/>
+<span>PDH &amp; Seragam</span>
+</label>
+<label class="flex items-center gap-2 p-2.5 rounded-xl border border-brand-border text-xs cursor-pointer hover:bg-brand-surface transition-colors">
+<input class="text-brand-black focus:ring-0" name="product_type" type="radio" value="Kaos Sablon"/>
+<span>Kaos Sablon</span>
+</label>
+<label class="flex items-center gap-2 p-2.5 rounded-xl border border-brand-border text-xs cursor-pointer hover:bg-brand-surface transition-colors">
+<input class="text-brand-black focus:ring-0" name="product_type" type="radio" value="Polo Shirt"/>
+<span>Polo Shirt</span>
+</label>
+<label class="flex items-center gap-2 p-2.5 rounded-xl border border-brand-border text-xs cursor-pointer hover:bg-brand-surface transition-colors">
+<input class="text-brand-black focus:ring-0" name="product_type" type="radio" value="Jaket"/>
+<span>Jaket / Hoodie</span>
+</label>
+<label class="flex items-center gap-2 p-2.5 rounded-xl border border-brand-border text-xs cursor-pointer hover:bg-brand-surface transition-colors">
+<input class="text-brand-black focus:ring-0" name="product_type" type="radio" value="Merchandise"/>
+<span>Merchandise</span>
+</label>
+<label class="flex items-center gap-2 p-2.5 rounded-xl border border-brand-border text-xs cursor-pointer hover:bg-brand-surface transition-colors">
+<input class="text-brand-black focus:ring-0" name="product_type" type="radio" value="Lainnya"/>
+<span>Lainnya</span>
+</label>
+</div>
+</div>
+<!-- Perkiraan Jumlah -->
+<div>
+<label class="block text-xs font-bold text-brand-black mb-1.5" for="order-quantity">Perkiraan Jumlah (Pcs)</label>
+<input class="w-full px-4 py-2.5 rounded-xl border border-brand-border text-xs text-brand-black placeholder:text-brand-lightGray focus:ring-1 focus:ring-brand-black focus:border-brand-black" id="order-quantity" placeholder="Contoh: 24, 50, 100 pcs" required="" type="text"/>
+</div>
+<!-- Kontak WhatsApp / Nama -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<div>
+<label class="block text-xs font-bold text-brand-black mb-1.5" for="client-name">Nama Pemesan / Instansi</label>
+<input class="w-full px-4 py-2.5 rounded-xl border border-brand-border text-xs text-brand-black placeholder:text-brand-lightGray focus:ring-1 focus:ring-brand-black focus:border-brand-black" id="client-name" placeholder="Nama Anda / Organisasi" required="" type="text"/>
+</div>
+<div>
+<label class="block text-xs font-bold text-brand-black mb-1.5" for="client-contact">Nomor WhatsApp</label>
+<input class="w-full px-4 py-2.5 rounded-xl border border-brand-border text-xs text-brand-black placeholder:text-brand-lightGray focus:ring-1 focus:ring-brand-black focus:border-brand-black" id="client-contact" placeholder="08xxxxxxxxxx" required="" type="tel"/>
+</div>
+</div>
+<!-- Catatan Spesifikasi -->
+<div>
+<label class="block text-xs font-bold text-brand-black mb-1.5" for="order-notes">Catatan Spesifikasi / Kebutuhan Bahan</label>
+<textarea class="w-full px-4 py-2.5 rounded-xl border border-brand-border text-xs text-brand-black placeholder:text-brand-lightGray focus:ring-1 focus:ring-brand-black focus:border-brand-black" id="order-notes" placeholder="Jelaskan kebutuhan bahan (cth: Cotton Combed 24s, American Drill), warna, sablon/bordir, serta target waktu." rows="3"></textarea>
+</div>
+<!-- Submit Buttons -->
+<div class="pt-2">
+<button class="w-full py-3 rounded-full bg-brand-black hover:bg-neutral-800 text-white text-xs font-semibold tracking-wide transition-colors flex items-center justify-center gap-2" type="submit">
+              Lanjutkan Konsultasi via WhatsApp
+            </button>
+<p class="text-[11px] text-center text-brand-gray mt-2.5">
+              Data Anda aman dan hanya digunakan untuk memproses pengajuan produksi bersama BRKH.
+            </p>
+</div>
+</form>
+</div>
+</div>
+</section>
+<!-- 8. CUSTOM ORDER CTA SECTION (Banner Gelap #111111) -->
+<section class="py-20 bg-white" data-purpose="custom-order-cta">
+<div class="max-w-7xl mx-auto px-4 sm:px-6">
+<div class="bg-brand-black text-white rounded-3xl p-8 sm:p-12 lg:p-14">
+<div class="max-w-2xl">
+<!-- Badge -->
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-neutral-900 border border-neutral-700 text-[11px] font-mono font-bold tracking-widest text-neutral-300 uppercase mb-5">
+<span class="w-1.5 h-1.5 rounded-full bg-white"></span>
+            LAYANAN CUSTOM BRKH
+          </div>
+<!-- Headline -->
+<h2 class="text-2xl sm:text-3xl lg:text-4xl font-extrabold tracking-tight mb-4">
+            Punya Kebutuhan Produksi Custom?
+          </h2>
+<!-- Description -->
+<p class="text-brand-lightGray text-xs sm:text-sm leading-relaxed mb-8">
+            Konsultasikan kebutuhan konveksi dan sablon Anda bersama tim BRKH. Kami siap membantu mendiskusikan produk dan spesifikasi yang dibutuhkan.
+          </p>
+<!-- Tombol -->
+<div>
+<a class="inline-flex items-center justify-center px-8 py-3.5 rounded-full bg-white text-brand-black font-bold text-xs sm:text-sm tracking-wide hover:bg-neutral-200 transition-colors" href="#pengajuan">
+              Mulai Konsultasi
+            </a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 9. ORDER TRACKING SECTION (MVP PRD FR-03) -->
+<section class="py-20 bg-brand-surface border-b border-brand-border" data-purpose="order-tracking" id="lacak">
+<div class="max-w-7xl mx-auto px-4 sm:px-6">
+<div class="max-w-3xl mx-auto text-center">
+<!-- Label Badge -->
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white border border-brand-border text-[11px] font-mono font-bold tracking-widest text-brand-black uppercase mb-4">
+<span class="w-2 h-2 rounded-full bg-brand-black"></span>
+          ORDER TRACKING
+        </div>
+<!-- Headline -->
+<h2 class="text-2xl sm:text-3xl font-extrabold tracking-tight text-brand-black mb-3">
+          Lacak Pesanan Anda.
+        </h2>
+<!-- Description -->
+<p class="text-xs sm:text-sm text-brand-gray mb-8 max-w-xl mx-auto">
+          Pantau perkembangan pesanan konveksi Anda dengan memasukkan nomor referensi pesanan.
+        </p>
+<!-- Tracking Form -->
+<div class="max-w-xl mx-auto">
+<form action="#lacak" class="flex flex-col sm:flex-row gap-2 bg-white p-2 rounded-2xl sm:rounded-full border border-brand-border shadow-sm" data-purpose="tracking-form" method="get" onsubmit="event.preventDefault(); alert('Pencarian pesanan untuk nomor referensi sedang diperiksa.');">
+<input class="flex-1 px-5 py-3 rounded-full text-xs text-brand-black placeholder:text-brand-lightGray border-0 focus:ring-0 focus:outline-none" placeholder="Masukkan nomor referensi pesanan" required="" type="text"/>
+<button class="px-6 py-3 rounded-full bg-brand-black hover:bg-neutral-800 text-white text-xs font-semibold tracking-wide transition-colors whitespace-nowrap" type="submit">
+              Lacak Pesanan
+            </button>
+</form>
+<p class="text-xs text-brand-lightGray mt-4">
+            Belum memiliki nomor pesanan? Hubungi tim BRKH untuk mendapatkan informasi lebih lanjut.
+          </p>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- END: MainContent -->
+<!-- 10. FOOTER SECTION -->
+<footer class="bg-brand-black text-white pt-16 pb-12 border-t border-neutral-800" data-purpose="main-footer" id="kontak">
+<div class="max-w-7xl mx-auto px-4 sm:px-6">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-10 pb-12 border-b border-neutral-800">
+<!-- Kolom Kiri: Logo & Deskripsi -->
+<div class="md:col-span-5 space-y-4">
+<div class="inline-block bg-white p-2 rounded-xl">
+<img alt="Logo BRKH Konveksi" class="h-9 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCbRD6qyDU2Kx0IVUHqyLxnAbXP_fWUMLEA4HitZwFyofBadvig1wxuqJ32zfKWAb_0PUk2kynh3H9pzWMXHP3SXRV-E1Ei94VXCw4jGgQpNBYnj4vM91iU40-eamnnuoeQB23SHEalzKi_vPD6ToDTtneReM33OZ17pJqWwk3mzdToh_v0ErCqdal-4J_tU9-FazDv-5JVsmhlYaQXeNyVxSteRQ4r2rNMr4C52hEAR37SrKziCGsS"/>
+</div>
+<p class="text-xs text-brand-lightGray leading-relaxed max-w-sm">
+          BRKH Konveksi merupakan layanan konveksi dan sablon untuk berbagai kebutuhan seragam, apparel, dan merchandise custom.
+        </p>
+</div>
+<!-- Kolom Tengah: Navigasi -->
+<div class="md:col-span-3 space-y-3">
+<span class="text-xs font-mono font-bold tracking-widest text-neutral-300 uppercase block mb-1">NAVIGASI</span>
+<ul class="space-y-2 text-xs text-brand-lightGray">
+<li><a class="hover:text-white transition-colors" href="#beranda">Beranda</a></li>
+<li><a class="hover:text-white transition-colors" href="#tentang">Tentang Kami</a></li>
+<li><a class="hover:text-white transition-colors" href="#katalog">Katalog</a></li>
+<li><a class="hover:text-white transition-colors" href="#cara-pesan">Cara Pemesanan</a></li>
+<li><a class="hover:text-white transition-colors" href="#pengajuan">Pengajuan Pesanan</a></li>
+<li><a class="hover:text-white transition-colors" href="#lacak">Lacak Pesanan</a></li>
+</ul>
+</div>
+<!-- Kolom Kanan: Hubungi Kami -->
+<div class="md:col-span-4 space-y-3">
+<span class="text-xs font-mono font-bold tracking-widest text-neutral-300 uppercase block mb-1">HUBUNGI KAMI</span>
+<ul class="space-y-2 text-xs text-brand-lightGray">
+<li><strong class="text-white font-medium">WhatsApp:</strong> Hubungi Admin Konveksi</li>
+<li><strong class="text-white font-medium">Email:</strong> Tersedia via Kontak Resmi</li>
+<li><strong class="text-white font-medium">Instagram:</strong> Official BRKH Konveksi</li>
+<li><strong class="text-white font-medium">Alamat:</strong> Workshop Produksi Konveksi &amp; Sablon</li>
+</ul>
+</div>
+</div>
+<!-- Baris Bawah Footer -->
+<div class="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-brand-lightGray gap-4">
+<div>
+        © 2026 BRKH Konveksi. All rights reserved.
+      </div>
+<div>
+        Sablon &amp; Konveksi
+      </div>
+</div>
+</div>
+</footer>
+<!-- END: FooterSection -->
+<!-- Interactive Scripts -->
+<script>
+  const mobileBtn = document.getElementById('mobile-menu-button');
+  const mobileMenu = document.getElementById('mobile-menu');
+  if (mobileBtn && mobileMenu) {
+    mobileBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  }
+
+  // Simple search filter demonstration for catalog
+  const searchInput = document.getElementById('product-search');
+  if (searchInput) {
+    searchInput.addEventListener('input', (e) => {
+      const term = e.target.value.toLowerCase();
+      const productCards = document.querySelectorAll('#katalog .grid > div');
+      productCards.forEach(card => {
+        const title = card.querySelector('h3')?.innerText.toLowerCase() || '';
+        const desc = card.querySelector('p')?.innerText.toLowerCase() || '';
+        if (title.includes(term) || desc.includes(term)) {
+          card.style.display = '';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    });
+  }
+</script>
+</body></html>
